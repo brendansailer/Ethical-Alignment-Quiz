@@ -1,0 +1,100 @@
+h2{
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  color:#FFFFFF;
+}
+
+p{
+  color:#FFFFFF;
+  text-align:center;
+  margin:0px;
+}
+
+.blurb{
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  color:#FFFFFF;
+  margin-left:15%;
+  margin-right:15%;
+  border: 2px solid#428bca; 
+  padding: 10px; 
+}
+
+.inst{
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+  color:#FFFFFF;
+  margin-left:15%;
+  margin-right:15%;
+}
+.smallBox{
+  margin-left:15%;
+  margin-right:15%;
+  border: 2px solid#d30b0d; 
+  padding: 10px; 
+}
+
+.left_col {
+  margin-left: 15%;
+  float: left;
+  width: 25%
+}
+
+.right_col {
+  float: right;
+  width: 25%;
+  margin-right: 15%;
+}
+
+.top {
+  text-align: center;
+}
+
+.buttonQuiz{
+  background-color:#428bca;
+  color: white;
+  border:none;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  border-radius:10px;
+  display:inline-block;
+}
+
+.buttonQuiz:disabled,
+.buttonQuiz[disabled]{
+  border: 1px solid #999999;
+  background-color: #cbcaca;
+  color: #ffffff;
+}
+
+.drop{
+  font-family: 'Roboto', sans-serif;
+  padding: 0px; 
+  margin: 0px auto;
+  text-align:center;
+  align-self: center;
+  width: 280px;  
+}
+
+.drag{
+  font-family: 'Roboto', sans-serif;
+  padding: 0px; 
+  margin: 0px auto;
+  text-align:center;
+  width: 280px;  
+}
+
+.mini{
+  width: 10%;
+  height: 10%;
+}
+
+.center_div_quiz{
+  background-color:#013364;
+  text-align: center;
+  align-self: center;
+}

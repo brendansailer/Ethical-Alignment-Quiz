@@ -1,0 +1,78 @@
+h1{
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    Color: #FFFFFF;
+    font-size: 48px;
+}
+
+.i1{
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+  }
+
+  .i2{
+    display: inline-block;
+    width: 12.5%;
+    height: 12.5%;
+  }
+
+  .c1{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size:32pt;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom:10px;
+    text-align:left;
+    border: 2px solid#d30b0d; 
+    padding: 10px; 
+  }
+
+  .c2{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size:16pt;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align:left;
+    border: 2px solid#428bca; 
+    padding: 10px; 
+    margin-bottom:5px;
+  }
+
+  .c3{
+    text-align:center;
+    margin:5px;
+    margin-top:50px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size:16pt;
+    margin-left:20px;
+    margin-bottom:10px;
+  }
+
+  .buttonResults {
+    background-color: #428bca; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:10px;
+    display:inline-block;
+  }
+
+  .cornerLogo{
+    display: inline-block;
+    width: 5%;
+    height: 5%;
+  }
+
+  .center_div{
+    text-align: center;
+    align-self: center;
+    margin-bottom:10px;
+  }
