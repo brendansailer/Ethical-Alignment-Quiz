@@ -3,7 +3,7 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { db } from './firebase';
 import './quiz.css'
 import {Redirect} from 'react-router-dom';
-import logo from './images/logoBig.svg';
+import logo from './images/logoPlaceholder.png';
 
 const reorder = (list, startIndex, endIndex) => {
   const result = Array.from(list);

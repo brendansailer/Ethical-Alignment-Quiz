@@ -44,14 +44,11 @@ class Topics extends React.Component {
     await db.collection("users").doc(doc_id).update({
       categories: this.state.topics,
       totals: {
-        'aristotelian': 0,
-        'confucian': 0,
         'deontological': 0,
         'egoist': 0,
         'epicurean': 0,
         'feminist': 0,
         'legalist': 0,
-        'stoic': 0,
         'utilitarian': 0
       },
       responses: {

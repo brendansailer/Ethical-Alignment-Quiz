@@ -1,9 +1,10 @@
 import React from 'react';
-import aristotelian from './images/logoPlaceholder.png';
-import confucian from './images/logoPlaceholder.png';
 import deontological from './images/logoPlaceholder.png';
 import egoist from './images/logoPlaceholder.png';
 import epicurean from './images/logoPlaceholder.png';
+import feminist from './images/logoPlaceholder.png';
+import legalist from './images/logoPlaceholder.png';
+import utilitarian from './images/logoPlaceholder.png';
 import './Results.css'
 import {Link} from 'react-router-dom';
 import { db } from './firebase';
@@ -13,47 +14,45 @@ class Results extends React.Component {
     super(props);
     this.state = {
       results: {
-        'aristotelian': 0,
-        'confucian': 0,
         'deontological': 0,
         'egoist': 0,
         'epicurean': 0,
         'feminist': 0,
         'legalist': 0,
-        'stoic': 0,
         'utilitarian': 0
       },
       percentages: {
-        'aristotelian': 0,
-        'confucian': 0,
         'deontological': 0,
         'egoist': 0,
         'epicurean': 0,
         'feminist': 0,
         'legalist': 0,
-        'stoic': 0,
         'utilitarian': 0
       },
       candidates: {
-        'aristotelian': {
-          'url': 'https://joebiden.com/joes-vision/',
-          'img': aristotelian
-        },
-        'confucian': {
-          'url': 'https://peteforamerica.com/issues/',
-          'img': confucian
-        },
         'deontological': {
-          'url': 'https://sanderssanders.com/issues/',
+          'url': 'https://en.wikipedia.org/wiki/Deontological_ethics',
           'img': deontological
         },
         'egoist': {
-          'url': 'https://elizabethwarren.com/plans',
+          'url': 'https://en.wikipedia.org/wiki/Egoism',
           'img': egoist
         },
         'epicurean': {
-          'url': 'https://www.promiseskept.com/about/',
+          'url': 'https://en.wikipedia.org/wiki/Epicureanism',
           'img': epicurean
+        },
+        'feminist': {
+          'url': 'https://en.wikipedia.org/wiki/Feminist_ethics',
+          'img': feminist
+        },
+        'legalist': {
+          'url': 'https://en.wikipedia.org/wiki/Legalism_(Chinese_philosophy)',
+          'img': legalist
+        },
+        'utilitarian': {
+          'url': 'https://en.wikipedia.org/wiki/Utilitarianism',
+          'img': utilitarian
         }
       },
       sortedPerentages: []
