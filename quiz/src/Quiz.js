@@ -112,20 +112,20 @@ class Quiz extends React.Component {
     const previousQuestions = this.state.previousQuestions;
     let question_no;
     switch (question_category) {
-      case 'economy':
-      this.setState({ question_category_show: 'Economy' });
+      case 'automation':
+      this.setState({ question_category_show: 'Job Automation' });
       break;
-      case 'education':
-      this.setState({ question_category_show: 'Education' });
+      case 'weapons':
+      this.setState({ question_category_show: 'Autonomous Weapons' });
       break;
-      case 'environment':
-      this.setState({ question_category_show: 'Environment' });
+      case 'surveillance':
+      this.setState({ question_category_show: 'Government Surveillance' });
       break;
-      case 'guncontrol':
-      this.setState({ question_category_show: 'Gun Control' });
+      case 'corporate':
+      this.setState({ question_category_show: 'Corporate Responsibility' });
       break;
-      case 'healthcare':
-      this.setState({ question_category_show: 'Health Care' });
+      case 'mission':
+      this.setState({ question_category_show: 'Mission Critical Systems' });
       break;
     }
     if (question_category in this.state.previousQuestions) {

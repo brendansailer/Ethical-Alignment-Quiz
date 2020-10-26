@@ -1,14 +1,14 @@
 import * as firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDhISQsIfZW4z9gzt37_MHPcIwr8J5GvKI",
-  authDomain: "irish-hacks.firebaseapp.com",
-  databaseURL: "https://irish-hacks.firebaseio.com",
-  projectId: "irish-hacks",
-  storageBucket: "irish-hacks.appspot.com",
-  messagingSenderId: "20151175746",
-  appId: "1:20151175746:web:68265011fbd080f058fbdb",
-  measurementId: "G-XZK4GY579Z"
+  apiKey: "AIzaSyCD-RId2Onu7EkJoIJtMSQFelTsVTzWTew",
+  authDomain: "ethics-final-webpage.firebaseapp.com",
+  databaseURL: "https://ethics-final-webpage.firebaseio.com",
+  projectId: "ethics-final-webpage",
+  storageBucket: "ethics-final-webpage.appspot.com",
+  messagingSenderId: "405016414702",
+  appId: "1:405016414702:web:488d572df4d5ebd05aa6ff",
+  measurementId: "G-3CK90C4NEG"
 };
 
 firebase.initializeApp(firebaseConfig);

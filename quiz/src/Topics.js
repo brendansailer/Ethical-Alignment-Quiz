@@ -15,11 +15,11 @@ class Topics extends React.Component {
     this.state = {
       percentages: {},
       topics: {
-        economy: 50,
-        education: 50,
-        environment: 50,
-        guncontrol: 50,
-        healthcare: 50
+        automation: 50,
+        weapons: 50,
+        surveillance: 50,
+        corporate: 50,
+        mission: 50
       },
       move: false,
     };
@@ -52,7 +52,7 @@ class Topics extends React.Component {
         'utilitarian': 0
       },
       responses: {
-        'economy': {
+        'automation': {
           'question1': {
             'answered': false
           },
@@ -63,7 +63,7 @@ class Topics extends React.Component {
             'answered': false
           },
         },
-        'environment': {
+        'weapons': {
           'question1': {
             'answered': false
           },
@@ -74,7 +74,7 @@ class Topics extends React.Component {
             'answered': false
           },
         },
-        'guncontrol': {
+        'surveillance': {
           'question1': {
             'answered': false
           },
@@ -85,7 +85,7 @@ class Topics extends React.Component {
             'answered': false
           },
         },
-        'healthcare': {
+        'corporate': {
           'question1': {
             'answered': false
           },
@@ -96,7 +96,7 @@ class Topics extends React.Component {
             'answered': false
           },
         },
-        'education': {
+        'mission': {
           'question1': {
             'answered': false
           },
@@ -128,9 +128,9 @@ class Topics extends React.Component {
         <h1>Topics</h1>
 
         <img src={econ} alt="gun" className='icon'/>
-        <h2 className="topic_title">Economy</h2>
+        <h2 className="topic_title">Job Automation</h2>
         <div className="slidecontainer">
-        <input type="range" min="1" max="101" className="slider" id="myRange1" step="25" list="range-labels" value={this.state.topics.economy} onChange={(ev) => this.handleChange(ev, 'economy')}/>
+        <input type="range" min="1" max="101" className="slider" id="myRange1" step="25" list="range-labels" value={this.state.topics.automation} onChange={(ev) => this.handleChange(ev, 'automation')}/>
         <div className="label_div not">Not at all important</div>
         <div className="label_div low">Low importance</div>
         <div className="label_div neutral">Neutral</div>
@@ -139,9 +139,9 @@ class Topics extends React.Component {
         </div>
 
         <img src={edu} alt="gun" className='icon'/>
-        <h2 className="topic_title">Education</h2>
+        <h2 className="topic_title">Autonomous Weapons</h2>
         <div className="slidecontainer">
-        <input type="range" min="1" max="101" className="slider" id="myRange2" step="25" list="range-labels" value={this.state.topics.education} onChange={(ev) => this.handleChange(ev, 'education')}/>
+        <input type="range" min="1" max="101" className="slider" id="myRange2" step="25" list="range-labels" value={this.state.topics.weapons} onChange={(ev) => this.handleChange(ev, 'weapons')}/>
         <div className="label_div not">Not at all important</div>
         <div className="label_div low">Low importance</div>
         <div className="label_div neutral">Neutral</div>
@@ -150,9 +150,9 @@ class Topics extends React.Component {
         </div>
 
         <img src={env} alt="gun" className='icon'/>
-        <h2 className="topic_title">Environment</h2>
+        <h2 className="topic_title">Government Surveillance</h2>
         <div className="slidecontainer">
-        <input type="range" min="1" max="101" className="slider" id="myRange3" step="25" list="range-labels" value={this.state.topics.environment} onChange={(ev) => this.handleChange(ev, 'environment')}/>
+        <input type="range" min="1" max="101" className="slider" id="myRange3" step="25" list="range-labels" value={this.state.topics.surveillance} onChange={(ev) => this.handleChange(ev, 'surveillance')}/>
         <div className="label_div not">Not at all important</div>
         <div className="label_div low">Low importance</div>
         <div className="label_div neutral">Neutral</div>
@@ -161,9 +161,9 @@ class Topics extends React.Component {
         </div>
 
         <img src={gun} alt="gun" className='icon'/>
-        <h2 className="topic_title">Gun Control</h2>
+        <h2 className="topic_title">Corporate Responsibility</h2>
         <div className="slidecontainer">
-        <input type="range" min="1" max="101" className="slider" id="myRange4" step="25" list="range-labels" value={this.state.topics.guncontrol} onChange={(ev) => this.handleChange(ev, 'guncontrol')}/>
+        <input type="range" min="1" max="101" className="slider" id="myRange4" step="25" list="range-labels" value={this.state.topics.corporate} onChange={(ev) => this.handleChange(ev, 'corporate')}/>
         <div className="label_div not">Not at all important</div>
         <div className="label_div low">Low importance</div>
         <div className="label_div neutral">Neutral</div>
@@ -172,18 +172,16 @@ class Topics extends React.Component {
         </div>
 
         <img src={hc} alt="gun" className='icon'/>
-        <h2 className="topic_title">Health Care</h2>
+        <h2 className="topic_title">Mission Critical Systems</h2>
         <div className="slidecontainer">
-        <input type="range" min="1" max="101" className="slider" id="myRange5" step="25" list="range-labels" value={this.state.topics.healthcare} onChange={(ev) => this.handleChange(ev, 'healthcare')}/>
+        <input type="range" min="1" max="101" className="slider" id="myRange5" step="25" list="range-labels" value={this.state.topics.mission} onChange={(ev) => this.handleChange(ev, 'mission')}/>
         <div className="label_div not">Not at all important</div>
         <div className="label_div low">Low importance</div>
         <div className="label_div neutral">Neutral</div>
         <div className="label_div important">Important</div>
         <div className="label_div very">Very important</div> 
         </div>
-        <Link to='/quiz'> 
-          <div className="take_quiz"><button type="button" className="buttonTop" onClick={() => this.addTopicPreferences()}><b>Take Quiz</b></button></div>
-        </Link>
+        <div className="take_quiz"><button type="button" className="buttonTop" onClick={() => this.addTopicPreferences()}><b>Take Quiz</b></button></div>
       </div>
     )
   }
