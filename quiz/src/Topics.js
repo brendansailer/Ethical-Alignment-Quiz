@@ -1,11 +1,11 @@
 import React from 'react';
 import './topics.css';
 import {Redirect, withRouter} from 'react-router-dom';
-import gun from './images/gun.svg'
-import econ from './images/economy.svg'
-import edu from './images/education.svg'
-import hc from './images/hc.svg'
-import env from './images/env.svg'
+import automation from './images/automation.svg'
+import weapons from './images/weapon.svg'
+import surveillance from './images/surveillance.svg'
+import corporate from './images/corporate.svg'
+import mission from './images/mission.svg'
 import { db } from './firebase';
 import {Link} from 'react-router-dom';
 
@@ -127,7 +127,7 @@ class Topics extends React.Component {
       <div>
         <h1>Topics</h1>
 
-        <img src={econ} alt="gun" className='icon'/>
+        <img src={automation} alt="automation" className='icon'/>
         <h2 className="topic_title">Job Automation</h2>
         <div className="slidecontainer">
         <input type="range" min="1" max="101" className="slider" id="myRange1" step="25" list="range-labels" value={this.state.topics.automation} onChange={(ev) => this.handleChange(ev, 'automation')}/>
@@ -138,7 +138,7 @@ class Topics extends React.Component {
         <div className="label_div very">Very important</div> 
         </div>
 
-        <img src={edu} alt="gun" className='icon'/>
+        <img src={weapons} alt="weapons" className='icon'/>
         <h2 className="topic_title">Autonomous Weapons</h2>
         <div className="slidecontainer">
         <input type="range" min="1" max="101" className="slider" id="myRange2" step="25" list="range-labels" value={this.state.topics.weapons} onChange={(ev) => this.handleChange(ev, 'weapons')}/>
@@ -149,10 +149,10 @@ class Topics extends React.Component {
         <div className="label_div very">Very important</div> 
         </div>
 
-        <img src={env} alt="gun" className='icon'/>
+        <img src={surveillance} alt="weapons" className='icon'/>
         <h2 className="topic_title">Government Surveillance</h2>
         <div className="slidecontainer">
-        <input type="range" min="1" max="101" className="slider" id="myRange3" step="25" list="range-labels" value={this.state.topics.surveillance} onChange={(ev) => this.handleChange(ev, 'surveillance')}/>
+        <input type="range" min="1" max="101" className="slider" id="myRange3" step="25" list="range-labels" value={this.state.topics.weapons} onChange={(ev) => this.handleChange(ev, 'surveillance')}/>
         <div className="label_div not">Not at all important</div>
         <div className="label_div low">Low importance</div>
         <div className="label_div neutral">Neutral</div>
@@ -160,7 +160,7 @@ class Topics extends React.Component {
         <div className="label_div very">Very important</div> 
         </div>
 
-        <img src={gun} alt="gun" className='icon'/>
+        <img src={corporate} alt="corporate" className='icon'/>
         <h2 className="topic_title">Corporate Responsibility</h2>
         <div className="slidecontainer">
         <input type="range" min="1" max="101" className="slider" id="myRange4" step="25" list="range-labels" value={this.state.topics.corporate} onChange={(ev) => this.handleChange(ev, 'corporate')}/>
@@ -171,7 +171,7 @@ class Topics extends React.Component {
         <div className="label_div very">Very important</div> 
         </div>
 
-        <img src={hc} alt="gun" className='icon'/>
+        <img src={mission} alt="mission" className='icon'/>
         <h2 className="topic_title">Mission Critical Systems</h2>
         <div className="slidecontainer">
         <input type="range" min="1" max="101" className="slider" id="myRange5" step="25" list="range-labels" value={this.state.topics.mission} onChange={(ev) => this.handleChange(ev, 'mission')}/>
