@@ -73,14 +73,15 @@ class Results extends React.Component {
       });
     });
     var percentages = {}
-    var total_points = parseInt(results.aristotelian) + parseInt(results.confucian) + parseInt(results.deontological) + parseInt(results.egoist) + parseInt(results.epicurean);
+    var total_points = parseInt(results.deontological) + parseInt(results.egoist) + parseInt(results.epicurean) + parseInt(results.feminist) + parseInt(results.legalist) + parseInt(results.utilitarian);
     var num_questions = total_points/20;
     var high_score = num_questions * 10;
-    percentages['aristotelian'] = parseInt(results.aristotelian)/high_score * 100;
-    percentages['confucian'] = parseInt(results.confucian)/high_score * 100;
     percentages['deontological'] = parseInt(results.deontological)/high_score * 100;
     percentages['egoist'] = parseInt(results.egoist)/high_score * 100;
     percentages['epicurean'] = parseInt(results.epicurean)/high_score * 100;
+    percentages['feminist'] = parseInt(results.feminist)/high_score * 100;
+    percentages['legalist'] = parseInt(results.legalist)/high_score * 100;
+    percentages['utilitarian'] = parseInt(results.utilitarian)/high_score * 100;
 
     let sortedPerentages = [];
 
