@@ -3,7 +3,6 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { db } from './firebase';
 import './quiz.css'
 import {Redirect} from 'react-router-dom';
-import logo from './images/logoPlaceholder.png';
 
 const reorder = (list, startIndex, endIndex) => {
   const result = Array.from(list);
@@ -45,7 +44,7 @@ const getItemStyle = (isDragging, draggableStyle) => ({
 const getListStyle = isDraggingOver => ({
   background: isDraggingOver ? "#cbcaca" : "#cbcaca",
   padding: grid,
-  width: 250
+  width: 400
 });
 
 class Quiz extends React.Component {
@@ -355,7 +354,6 @@ class Quiz extends React.Component {
             <button type="button" className="buttonQuiz" onClick={() => this.moveToNextQuestion()} disabled={this.state.items.length !== 0}>
               <b>{this.state.questionCategoryList.length > 0 ? 'Next Question' : 'See Results'}</b>
             </button>
-            <img src={logo} alt="logo" className='mini'/>
           </div>
         </div>
       </DragDropContext>

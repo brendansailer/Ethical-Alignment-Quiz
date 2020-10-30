@@ -151,7 +151,7 @@ class Topics extends React.Component {
         <img src={surveillance} alt="weapons" className='icon'/>
         <h2 className="topic_title">Government Surveillance</h2>
         <div className="slidecontainer">
-        <input type="range" min="1" max="101" className="slider" id="myRange3" step="25" list="range-labels" value={this.state.topics.weapons} onChange={(ev) => this.handleChange(ev, 'surveillance')}/>
+        <input type="range" min="1" max="101" className="slider" id="myRange3" step="25" list="range-labels" value={this.state.topics.surveillance} onChange={(ev) => this.handleChange(ev, 'surveillance')}/>
         <div className="label_div not">Not at all important</div>
         <div className="label_div low">Low importance</div>
         <div className="label_div neutral">Neutral</div>
