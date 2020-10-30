@@ -7,7 +7,6 @@ import surveillance from './images/surveillance.svg'
 import corporate from './images/corporate.svg'
 import mission from './images/mission.svg'
 import { db } from './firebase';
-import {Link} from 'react-router-dom';
 
 class Topics extends React.Component {
   constructor(props){

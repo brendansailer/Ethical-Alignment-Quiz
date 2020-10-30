@@ -62,18 +62,21 @@ class detailedResults extends React.Component {
 
     convertName = (name) => {
         switch (name) {
-            case 'sanders':
-                return 'Bernie Sanders';
-            case 'biden':
-                return 'Joe Biden';
-            case 'warren':
-                return 'Elizabeth Warren';
-            case 'trump':
-                return 'Donald Trump';
-            case 'pete':
-                return 'Pete Buttigieg';
+            case 'deontological':
+                return 'Deontological Ethics';
+            case 'egoist':
+                return 'Egoism';
+            case 'epicurean':
+                return 'Epicureanism';
+            case 'feminist':
+                return 'Feminist Ethics';
+            case 'legalist':
+                return 'Legalist Ethics';
+            case 'utilitarian':
+                return 'Utilitarianism';
+            default:
+                return 'Error'
         }
-        return '';
     }
 
     printLinks = () => {

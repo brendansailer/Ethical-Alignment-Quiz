@@ -87,8 +87,8 @@ class Quiz extends React.Component {
           totalPoints += categoriesData[cat];
         }
         let questionsPerCat = [];
-        for (var cat in categoriesData){
-          questionsPerCat.push([cat, Math.min(Math.floor(10*categoriesData[cat] / totalPoints), 3)]);
+        for (var category in categoriesData){
+          questionsPerCat.push([category, Math.min(Math.floor(10*categoriesData[category] / totalPoints), 3)]);
         }
 
         for (let i = 0; i < questionsPerCat.length; i++){
@@ -127,6 +127,7 @@ class Quiz extends React.Component {
       case 'mission':
       this.setState({ question_category_show: 'Mission Critical Systems' });
       break;
+      default:
     }
     if (question_category in this.state.previousQuestions) {
       question_no = previousQuestions[question_category]+1;
@@ -222,11 +223,9 @@ class Quiz extends React.Component {
       });
     });
 
-    console.log(curr_total);
-    console.log(curr_responses);
     curr_responses[this.state.question_category][this.state.question_no]['answered'] = true;
     const selected = this.state.selected;
-    const points = [10, 6, 3, 1, 0];
+    const points = [10, 7, 5, 3, 1, 0];
 
     for (let i = 0; i < selected.length; i++){
       const candidate = this.state.selected[i]['id'];
@@ -353,7 +352,7 @@ class Quiz extends React.Component {
             </div>
           </div>
           <div className="center_div_quiz">
-            <button type="button" className="buttonQuiz" onClick={() => this.moveToNextQuestion()} disabled={this.state.items.length != 0}>
+            <button type="button" className="buttonQuiz" onClick={() => this.moveToNextQuestion()} disabled={this.state.items.length !== 0}>
               <b>{this.state.questionCategoryList.length > 0 ? 'Next Question' : 'See Results'}</b>
             </button>
             <img src={logo} alt="logo" className='mini'/>
