@@ -121,6 +121,7 @@ class detailedResults extends React.Component {
                             <li><span className="number">3: {this.convertName(sortedRanks[2][0])}</span><span className="box quote">{this.state.quotes[topic][question][sortedRanks[2][0]]}</span></li>
                             <li><span className="number">4: {this.convertName(sortedRanks[3][0])}</span><span className="box quote">{this.state.quotes[topic][question][sortedRanks[3][0]]}</span></li>
                             <li><span className="number">5: {this.convertName(sortedRanks[4][0])}</span><span className="box quote">{this.state.quotes[topic][question][sortedRanks[4][0]]}</span></li>
+                            <li><span className="number">6: {this.convertName(sortedRanks[5][0])}</span><span className="box quote">{this.state.quotes[topic][question][sortedRanks[5][0]]}</span></li>
                         </ul>
                         </Fragment>);
                     
