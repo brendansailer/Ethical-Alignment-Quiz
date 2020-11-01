@@ -44,12 +44,13 @@ h1{
   .c3{
     text-align:center;
     margin:5px;
-    margin-top:50px;
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
     font-size:16pt;
     margin-left:20px;
     margin-bottom:10px;
+    align-self: center;
+    display:block;
   }
 
   .buttonResults {

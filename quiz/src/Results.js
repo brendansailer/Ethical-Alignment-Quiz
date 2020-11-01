@@ -97,6 +97,7 @@ class Results extends React.Component {
     return (
       <div>
         <h1>Results</h1>
+        <p className="c3">Click on a frameworks's name to learn more about it.</p>
         {
           this.state.sortedPerentages.map((candidate, index) => {
             // return this.state.candidates[candidate[0]].img
@@ -107,7 +108,7 @@ class Results extends React.Component {
             }
           })
         }
-        <p className="c3">Click on a frameworks's name to learn more about it.</p>
+        <a href="https://forms.gle/zZKQNzwhDMzVgQSX6" className="c3">Please fill out our post-reflection survey here.</a>
         <Link to='/DetailedResults'> 
             <div className="center_div"><button type="button" className="buttonResults"><b>Detailed Results</b></button></div>
         </Link>
